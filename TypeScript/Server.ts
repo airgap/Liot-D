@@ -5,6 +5,11 @@ import {Listener} from "./Listener";
 
 interface ServerArgs {
     port?: number;
+    https?: {
+        cert?: string;
+        privKey?: string;
+        fullchain?: string;
+    }
 }
 
 class Server extends Router {
